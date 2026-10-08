@@ -19,7 +19,7 @@ fun calculateCategory(age: Int, incomes: Double): String {
         //validation
         age < 0 -> "There has been an error with the AGE"
         incomes < 0 -> "There has been an error with the INCOMES"
-        
+
         age < 18 -> "Minor worker"
         age in 18..64 -> {
             when {
