@@ -5,11 +5,11 @@ fun main() {
     print("Type your age:\n\t> ")
     val age = readlnOrNull()?.toIntOrNull() ?: -1
 
-    print(validate(age))
+    print(validate2(age))
 
 }
 
-fun validate(age: Int): String {
+fun validate2(age: Int): String {
     return when (age) {
         in 1..10 -> "1 al 10"
         in 11..20 -> "11 al 20"
